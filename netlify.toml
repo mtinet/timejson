@@ -2,7 +2,7 @@
   functions = "netlify/functions"
 
 [[redirects]]
-  from = "http://timejson.netlify.app/.netlify/functions/time"
-  to = "/.netlify/functions/time"
+  from = "http://timejson.netlify.app/*"
+  to = "/:splat"
   status = 200
   force = true
