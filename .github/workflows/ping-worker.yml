@@ -1,6 +1,8 @@
 name: Ping Cloudflare Worker every 3 seconds
 
 on:
+  push:  # 리포지토리에 푸시할 때 즉시 실행
+  workflow_dispatch:  # 수동 실행 가능
   schedule:
     - cron: "*/1 * * * *"  # 매분 실행
 
