@@ -2,7 +2,7 @@
   functions = "netlify/functions"
 
 [[redirects]]
-  from = "http://your-netlify-site.netlify.app/.netlify/functions/time"
+  from = "http://timejson.netlify.app/.netlify/functions/time"
   to = "/.netlify/functions/time"
   status = 200
   force = true
