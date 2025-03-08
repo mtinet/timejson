@@ -1,0 +1,16 @@
+name: Ping Cloudflare Worker every 3 seconds
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"  # 매분 실행
+
+jobs:
+  ping_worker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send request every 3 seconds
+        run: |
+          for i in {1..20}; do  # 1분 동안 3초마다 실행
+            curl -s https://green-cake-8f49.mtinet79.workers.dev/
+            sleep 3
+          done
